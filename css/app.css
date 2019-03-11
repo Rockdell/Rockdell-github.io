@@ -1,0 +1,273 @@
+/**
+ * Body
+ */
+
+body {
+  margin: 0 auto;
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+
+  --bg-color: #eee;
+  --panel-color: #fff;
+
+  --main-color: #036;
+  --secondary-color: #0056ad;
+
+  --dark-color: #333;
+  --grey-color: #aaa;
+  --light-color: #eee;
+
+  --success-bg-color: #d4edda;
+  --success-text-color: #155724;
+
+  --loading-bg-color: #cce5ffad;
+  --loading-text-color: #004085;
+
+  --error-bg-color: #f8d7da;
+  --error-text-color: #721c24;
+
+  --button-blue-color: #014b96;
+  --button-blue-color-hover: #003e7d;
+
+  --red-color: #dc3545;
+  --button-red-color-hover: #c82333;
+
+  --green-color: #28a745;
+  --button-green-color-hover: #218838;
+
+  --orange-color: #d68906;
+  --button-orange-color-hover: #b27000;
+
+  background-color: var(--bg-color);
+
+  --medium-shadow-color: rgba(0, 0, 0, 0.65);
+  --dark-shadow-color: #000000;
+
+  padding-top: 5.2rem; /* Make room for the nav bar */
+  box-sizing: border-box;
+}
+
+.navbar {
+  min-height: 5.2rem;
+  box-sizing: border-box;
+}
+
+.navbar-brand {
+	margin-top: -30px;
+	margin-bottom: -30px;
+}
+
+.navbar-brand img {
+	height: 4.4rem;
+	width: 140px;
+}
+
+@media (max-width: 500px) {
+	.navbar .name {
+		transform: translateX(calc(38% - 18px));
+	}
+}
+
+.footer {
+  width: 100%;
+}
+
+.sign {
+  max-width: 35rem;
+  margin-top: 3rem;
+}
+
+.sign .google {
+  background-color: rgb(205, 85, 66);
+}
+
+.sign .twitter {
+  background-color: rgb(72, 172, 241);
+}
+
+.sign .facebook {
+  background-color: rgb(51, 90, 164);
+}
+
+.items-container {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.items-container header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.items-filters {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.filter-category {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+.item-image {
+  height: 150px;
+  width: 150px;
+}
+
+.auctions.container {
+  font-size: 0.7rem;
+}
+
+.collapseButton .fa:after {
+  font-size: 1.7em;
+  content: "\f106";
+}
+
+.collapseButton.collapsed .fa:after {
+  content: "\f107";
+}
+
+.edit-profile, .ban-user {
+  font-size: 1.5em;
+}
+
+.category-img {
+  height: 70px;
+  max-width: 100%;
+}
+
+.panel-auction-img {
+  height: 100px;
+  max-width: 100%;
+}
+
+.white-space-nowrap {
+  white-space: nowrap;
+}
+
+.carousel-item {
+  position: relative;
+  max-height: 230px;
+}
+
+.carousel-item img {
+  min-height: 230px;
+}
+
+@media (min-width: 1000px) {
+  .carousel-item img {
+    transform: translateY(-17%);
+  }
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+}
+
+.carousel-item:after,
+.carousel-item:before {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  content: "";
+  display: block;
+}
+
+.carousel-item:after {
+  background-color: #bbb;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+body > footer.bg-dark {
+  background-color: #202020 !important;
+}
+
+body > footer.bg-dark .nav-link {
+  color: #a3a9ad !important;
+}
+
+.nav .nav-item .badge {
+  position: relative;
+  bottom: 1px;
+}
+
+/* */
+.footer-icon {
+  position: relative;
+  text-align: center;
+  width: 0px;
+  height: 0px;
+  padding: 18px;
+  border-radius: 18px;
+  color: #ffffff;
+}
+.footer-icon i {
+  font-size: 18px;
+  position: absolute;
+  top: 9px;
+}
+.footer-icon.social {
+  float: left;
+  margin: 0 5px 0 0;
+  cursor: pointer;
+  background: #6d6e71;
+  color: #262626;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.footer-icon.social:hover {
+  background: #262626;
+  color: #6d6e71;
+  transition: 0.5s;
+  filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
+}
+.footer-icon.social.fb i {
+  left: 11px;
+  top: 9px;
+}
+.footer-icon.social.tw i {
+  left: 10px;
+  top: 9px;
+}
+
+@media (max-width: 500px) {
+  .btn-block-xs-only {
+    display: block;
+    width: 100%;
+  }
+}
+
+.carousel,
+.carousel-inner {
+  max-height: 230px;
+}
+
+@include media-breakpoint-up(sm) {
+  .auctions.container {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .auctions.container {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .auctions.container {
+    font-size: 1.6rem;
+  }
+}

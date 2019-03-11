@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/lux/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+    <title>AuctionLine</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top py-3">
+      <div class="container">
+        <a class="navbar-brand col-1 mx-1" href="./index.html"><img src="assets/logo_smaller.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mx-2" id="navbarNavDropdown">
+          <div class="input-group mb-0 w-50 rounded-lg mx-auto d-none d-md-flex">
+            <input type="text" class="form-control" placeholder="Search auctions">
+            <div class="input-group-append">
+              <button class="btn btn-secondary border border-secondary"><i class="fas fa-search fa-lg"></i></button>
+            </div>
+          </div>
+          <div class="input-group mb-0 w-100 rounded-lg mx-auto d-static d-md-none mt-3">
+            <input type="text" class="form-control pl-3" placeholder="Search auctions">
+            <div class="input-group-append">
+              <button class="btn btn-secondary border border-secondary"><i class="fas fa-search fa-lg"></i></button>
+            </div>
+          </div>
+          <div class="ml-auto d-md-flex">
+            <div class="mr-0 mr-md-5">
+              <a class="btn btn-block-xs-only btn-danger text-white mt-2 mb-2 mt-md-0 mb-md-0" href="./admin_panel.html">
+                Admin
+                Panel </a>
+            </div>
+            <div class="mr-0 name">
+              <span class="nav-item dropdown ml-auto">
+                <a class="nav-link dropdown-toggle text-white p-0" data-toggle="dropdown" href="#" role="button"
+                  aria-haspopup="true" aria-expanded="false">Jane Doe</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="./index.html">Logout</a>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mb-md-5 mb-3 mt-4">
+      <div class="w-100 card">
+        <div class="card-body card-body pb-3">
+          <h5 class="font-weight-light mb-0">
+            <span class="font-weight-bold">Administrator Dashboard</span>
+          </h5>
+        </div>
+        <div class="row">
+          <div class="col-sm-3 pr-0">
+            <div class="pl-3 pr-3 pt-0 items-filters">
+              <ul class="nav flex-column pt-1 pb-2">
+                <li class="nav-item mr-0 mt-2 filter-category">
+                  <a class="nav-link text-info h5" href="./admin_panel.html"
+                    >Reported Auctions</a
+                  >
+                </li>
+                <li class="nav-item mr-0 mt-2 filter-category">
+                  <a class="nav-link h5" href="#">Manage Categories</a>
+                </li>
+                <li class="nav-item mr-0 mt-2 filter-category">
+                  <a class="nav-link text-info h5" href="./admin_panel_banned.html"
+                    >Manage Banned Users</a
+                  >
+                </li>
+                <li class="nav-item mt-2 mr-0">
+                  <a class="nav-link text-info h5" href="./admin_panel_rules.html">Edit Rules</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-9 pl-lg-0">
+            <div class="items-container">
+              <header class="d-flex justify-content-between pl-3">
+                <div class="d-inline-block">
+                  <p class="lead text-primary pt-3">
+                    Found <span class="font-weight-bold">8</span> categories.
+                  </p>
+                </div>
+                <div
+                  class="pl-0 pr-3 pt-1 d-flex flex-column justify-content-center"
+                >
+                  <a href="#" class="btn btn-dark btn-sm"
+                    ><i class="pr-2 fas fa-plus"></i>Add Category</a
+                  >
+                </div>
+              </header>
+              <div class="row no-gutters">
+                <div class="col-md-6">
+                  <div class="card border-left-0 border-top-0">
+                    <div class="row no-gutters">
+                      <div class="col-md-3 p-2 d-flex justify-content-center">
+                        <img src="assets/bag.jpg" class="category-img" alt="" />
+                      </div>
+                      <div class="col-md-9">
+                        <div class="card-body pb-2 pb-md-0">
+                          <h5 class="card-title text-primary">Purses</h5>
+                          <div class="d-flex justify-content-between">
+                            <p class="card-text mb-0">
+                              <small class="text-muted"
+                                >155 active auctions</small
+                              >
+                            </p>
+                            <div>
+                              <a href="#"
+                                ><i
+                                  class="fas fa-pencil-alt pt-1 text-info pr-1"
+                                ></i
+                              ></a>
+                              <a href="#"
+                                ><i
+                                  class="far fa-images pt-1 text-info pr-1"
+                                ></i
+                              ></a>
+                              <a href="#"
+                                ><i
+                                  class="far fa-trash-alt pt-1 text-danger pr-1"
+                                ></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card border-left-0 border-top-0">
+                    <div class="row no-gutters">
+                      <div class="col-md-3 p-2 d-flex justify-content-center">
+                        <img src="assets/belt.jpg" class="category-img" alt="" />
+                      </div>
+                      <div class="col-md-9">
+                        <div class="card-body pb-2 pb-md-0">
+                          <h5 class="card-title text-primary">Belts</h5>
+                          <div class="d-flex justify-content-between">
+                            <p class="card-text mb-0">
+                              <small class="text-muted"
+                                >155 active auctions</small
+                              >
+                            </p>
+                            <div>
+                              <a href="#"
+                                ><i
+                                  class="fas fa-pencil-alt pt-1 text-info pr-1"
+                                ></i
+                              ></a>
+                              <a href="#"
+                                ><i
+                                  class="far fa-images pt-1 text-info pr-1"
+                                ></i
+                              ></a>
+                              <a href="#"
+                                ><i
+                                  class="far fa-trash-alt pt-1 text-danger pr-1"
+                                ></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card border-left-0 border-top-0">
+                    <div class="row no-gutters">
+                      <div class="col-md-3 p-2 d-flex justify-content-center">
+                        <img src="assets/whitejar.jpg" class="category-img" alt="" />
+                      </div>
+                      <div class="col-md-9">
+                        <div class="card-body pb-2 pb-md-0">
+                          <h5 class="card-title text-primary">Antiques</h5>
+                          <div class="d-flex justify-content-between">
+                            <p class="card-text mb-0">
+                              <small class="text-muted"
+                                >155 active auctions</small
+                              >
+                            </p>
+                            <div>
+                              <a href="#"
+                                ><i
+                                  class="fas fa-pencil-alt pt-1 text-info pr-1"
+                                ></i
+                              ></a>
+                              <a href="#"
+                                ><i
+                                  class="far fa-images pt-1 text-info pr-1"
+                                ></i
+                              ></a>
+                              <a href="#"
+                                ><i
+                                  class="far fa-trash-alt pt-1 text-danger pr-1"
+                                ></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card border-left-0 border-top-0">
+                    <div class="row no-gutters">
+                      <div class="col-md-3 p-2 d-flex justify-content-center">
+                        <img src="assets/drawing.jpg" class="category-img" alt="" />
+                      </div>
+                      <div class="col-md-9">
+                        <div class="card-body pb-2 pb-md-0">
+                          <h5 class="card-title text-primary">Drawings</h5>
+                          <div class="d-flex justify-content-between">
+                            <p class="card-text mb-0">
+                              <small class="text-muted"
+                                >155 active auctions</small
+                              >
+                            </p>
+                            <div>
+                              <a href="#"
+                                ><i
+                                  class="fas fa-pencil-alt pt-1 text-info pr-1"
+                                ></i
+                              ></a>
+                              <a href="#"
+                                ><i
+                                  class="far fa-images pt-1 text-info pr-1"
+                                ></i
+                              ></a>
+                              <a href="#"
+                                ><i
+                                  class="far fa-trash-alt pt-1 text-danger pr-1"
+                                ></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card border-left-0 border-top-0">
+                    <div class="row no-gutters">
+                      <div class="col-md-3 p-2 d-flex justify-content-center">
+                        <img src="assets/toy.jpg" class="category-img" alt="" />
+                      </div>
+                      <div class="col-md-9">
+                        <div class="card-body pb-2 pb-md-0">
+                          <h5 class="card-title text-primary">Toys</h5>
+                          <div class="d-flex justify-content-between">
+                            <p class="card-text mb-0">
+                              <small class="text-muted"
+                                >155 active auctions</small
+                              >
+                            </p>
+                            <div>
+                              <a href="#"
+                                ><i
+                                  class="fas fa-pencil-alt pt-1 text-info pr-1"
+                                ></i
+                              ></a>
+                              <a href="#"
+                                ><i
+                                  class="far fa-images pt-1 text-info pr-1"
+                                ></i
+                              ></a>
+                              <a href="#"
+                                ><i
+                                  class="far fa-trash-alt pt-1 text-danger pr-1"
+                                ></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card border-left-0 border-top-0">
+                    <div class="row no-gutters">
+                      <div class="col-md-3 p-2 d-flex justify-content-center">
+                        <img src="assets/necklace1.jpg" class="category-img" alt="" />
+                      </div>
+                      <div class="col-md-9">
+                        <div class="card-body pb-2 pb-md-0">
+                          <h5 class="card-title text-primary">Jewlery</h5>
+                          <div class="d-flex justify-content-between">
+                            <p class="card-text mb-0">
+                              <small class="text-muted"
+                                >155 active auctions</small
+                              >
+                            </p>
+                            <div>
+                              <a href="#"
+                                ><i
+                                  class="fas fa-pencil-alt pt-1 text-info pr-1"
+                                ></i
+                              ></a>
+                              <a href="#"
+                                ><i
+                                  class="far fa-images pt-1 text-info pr-1"
+                                ></i
+                              ></a>
+                              <a href="#"
+                                ><i
+                                  class="far fa-trash-alt pt-1 text-danger pr-1"
+                                ></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card border-left-0 border-top-0">
+                    <div class="row no-gutters">
+                      <div class="col-md-3 p-2 d-flex justify-content-center">
+                        <img src="assets/furniture.jpg" class="category-img" alt="" />
+                      </div>
+                      <div class="col-md-9">
+                        <div class="card-body pb-2 pb-md-0">
+                          <h5 class="card-title text-primary">Furniture</h5>
+                          <div class="d-flex justify-content-between">
+                            <p class="card-text mb-0">
+                              <small class="text-muted"
+                                >155 active auctions</small
+                              >
+                            </p>
+                            <div>
+                              <a href="#"
+                                ><i
+                                  class="fas fa-pencil-alt pt-1 text-info pr-1"
+                                ></i
+                              ></a>
+                              <a href="#"
+                                ><i
+                                  class="far fa-images pt-1 text-info pr-1"
+                                ></i
+                              ></a>
+                              <a href="#"
+                                ><i
+                                  class="far fa-trash-alt pt-1 text-danger pr-1"
+                                ></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card border-left-0 border-top-0">
+                    <div class="row no-gutters">
+                      <div class="col-md-3 p-2 d-flex justify-content-center">
+                        <img src="assets/watch.jpg" class="category-img" alt="" />
+                      </div>
+                      <div class="col-md-9">
+                        <div class="card-body pb-2 pb-md-0">
+                          <h5 class="card-title text-primary">Watches</h5>
+                          <div class="d-flex justify-content-between">
+                            <p class="card-text mb-0">
+                              <small class="text-muted"
+                                >155 active auctions</small
+                              >
+                            </p>
+                            <div>
+                              <a href="#"
+                                ><i
+                                  class="fas fa-pencil-alt pt-1 text-info pr-1"
+                                ></i
+                              ></a>
+                              <a href="#"
+                                ><i
+                                  class="far fa-images pt-1 text-info pr-1"
+                                ></i
+                              ></a>
+                              <a href="#"
+                                ><i
+                                  class="far fa-trash-alt pt-1 text-danger pr-1"
+                                ></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+      integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/lux/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+    <title>AuctionLine</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top py-3">
+      <div class="container">
+        <a class="navbar-brand col-1 mx-1" href="./index.html"><img src="assets/logo_smaller.png"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mx-2" id="navbarNavDropdown">
+            <div class="input-group mb-0 w-50 rounded-lg mx-auto d-none d-md-flex">
+                <input type="text" class="form-control" placeholder="Search auctions">
+                <div class="input-group-append">
+                    <button class="btn btn-secondary border border-secondary"><i class="fas fa-search fa-lg"></i></button>
+                </div>
+            </div>
+            <div class="input-group mb-0 w-100 rounded-lg mx-auto d-static d-md-none mt-3">
+                    <input type="text" class="form-control pl-3" placeholder="Search auctions">
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary border border-secondary"><i class="fas fa-search fa-lg"></i></button>
+                    </div>
+                </div>
+            <div class="ml-auto d-md-flex">
+                <div class="mr-0 mr-md-5">
+                    <a class="btn btn-block-xs-only btn-info text-white mt-3 mb-2 mt-md-0 mb-md-0" href="./sign_in.html"> Sign in </a>
+                </div>
+                <div class="mr-0">
+                    <a class="btn btn-block-xs-only btn-danger text-white mt-2 mb-2 mt-md-0 mb-md-0" href="./sign_up.html"> Sign Up </a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="bg-white">
+      <div class="container">
+        
+      <ul class="nav nav-pills nav-fill bg-white m-0">
+          <li class="nav-item dropdown mr-0">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Todas as Categorias</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Belts <span class="badge badge-primary">55</span></a>
+                <a class="dropdown-item" href="#">Coins <span class="badge badge-primary">101</span></a>
+                <a class="dropdown-item" href="#">Paintings <span class="badge badge-primary">293</span></a>
+                <a class="dropdown-item" href="#">Purses <span class="badge badge-primary">17</span></a>
+                <a class="dropdown-item" href="#">Typewriters <span class="badge badge-primary">77</span></a>
+              </div>
+            </li>
+            <li class="nav-item d-none d-lg-inline mr-0">
+                <a class="nav-link text-uppercase disabled pl-0" href="#">|</a>
+              </li>
+      <li class="nav-item d-none d-lg-inline">
+        <a class="nav-link text-uppercase" href="#">Belts</a>
+      </li>
+      <li class="nav-item d-none d-lg-inline">
+        <a class="nav-link text-uppercase" href="#">Coins</a>
+      </li>
+      <li class="nav-item d-none d-lg-inline">
+        <a class="nav-link text-uppercase" href="#">Paintings</a>
+      </li>
+      <li class="nav-item d-none d-lg-inline">
+        <a class="nav-link text-uppercase" href="#">Purses</a>
+      </li>
+      <li class="nav-item d-none d-lg-inline mr-2">
+        <a class="nav-link text-uppercase" href="#">Typewriters</a>
+      </li>
+      </div>
+    </ul>
+      
+    </div>
+  </div>
+
+    <div
+      id="carouselExampleIndicators"
+      class="container-fluid carousel slide px-0"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators mb-0 d-none d-md-flex">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="assets/carousel_1.jpg" class="d-block w-100" alt="">
+              <div class="carousel-caption d-block text-center">
+                <h4>Your online auction house</h4>
+                <a href="#" class="btn btn-primary">Join our community</a>
+              </div>
+            </div>
+          <div class="carousel-item">
+              <img src="assets/carousel_2.jpg" class="d-block w-100" alt="">
+              <div class="carousel-caption d-block text-center">
+                <h4>Find thousands of bargains</h4>
+                <a href="#" class="btn btn-info border border-primary">View trending items</a>
+              </div>
+        </div>
+        <div class="carousel-item">
+            <img src="assets/carousel_3.jpg" class="d-block w-100" alt="">
+            <div class="carousel-caption d-block text-center">
+              <h4>Time is running out</h4>
+              <a href="#" class="btn btn-danger border border-primary">View auctions ending soon</a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="auctions container mt-5 pt-3">
+      <div class="row pl-4 mb-3">
+        <h2>Last deals</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md card border-primary mx-4 mx-md-1 mb-4 d-flex flex-column justify-content-between">
+          <img class="card-img-top pt-3 pt-lg-4" src="assets/drawing.jpg" />
+          <div class="pb-4 px-3">
+            <h4 class="card-title mt-3 text-dark">George Condo, Drawing</h4>
+            <div class="row no-gutters">
+              <div class="col-sm-6">
+                  <p class="card-text text-danger">Ends in 30 mins</p>
+                  <div class="row pl-3">
+                    <p class="card-text text-primary font-weight-bold">Last bid: 850€</p>
+                  </div>
+              </div>
+              <div class="col-sm-6 text-right">
+                  <button
+                  type="button"
+                  class="btn btn-primary py-1 px-2"
+                >
+                  Follow
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md card border-primary mx-4 mx-md-1 mb-4 d-flex flex-column justify-content-between">
+            <img class="card-img-top pt-3 pt-lg-4" src="assets/furniture.jpg" />
+            <div class="pb-4 px-3">
+              <h4 class="card-title mt-3 text-dark">Queen Anne Maple</h4>
+              <div class="row no-gutters">
+                <div class="col-sm-6">
+                    <p class="card-text text-danger">Ends in 1 hour</p>
+                    <div class="row pl-3">
+                      <p class="card-text text-primary font-weight-bold">Last bid: 250€</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 text-right">
+                    <button
+                    type="button"
+                    class="btn btn-primary py-1 px-2"
+                  >
+                    Follow
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md card border-primary mx-4 mx-md-1 mb-4 d-flex flex-column justify-content-between">
+              <img class="card-img-top pt-3 pt-lg-4" src="assets/chair.jpg" />
+              <div class="pb-4 px-3">
+                <h4 class="card-title mt-3 text-dark">Office chair</h4>
+                <div class="row no-gutters">
+                  <div class="col-sm-6">
+                      <p class="card-text text-danger">Ends in 1 hour</p>
+                      <div class="row pl-3">
+                        <p class="card-text text-primary font-weight-bold">Last bid: 60€</p>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 text-right">
+                      <button
+                      type="button"
+                      class="btn btn-primary py-1 px-2"
+                    >
+                      Follow
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md card border-primary mx-4 mx-md-1 mb-4 d-flex flex-column justify-content-between">
+                <img class="card-img-top pt-3 pt-lg-4" src="assets/watch.jpg" />
+                <div class="pb-4 px-3">
+                  <h4 class="card-title mt-3 text-dark">Rolex Mens Blue Vignette</h4>
+                  <div class="row no-gutters">
+                    <div class="col-sm-6">
+                        <p class="card-text text-danger">Ends in 2 hours</p>
+                        <div class="row pl-3">
+                          <p class="card-text text-primary font-weight-bold">Last bid: 250€</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 text-right">
+                        <button
+                        type="button"
+                        class="btn btn-primary py-1 px-2"
+                      >
+                        Follow
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      </div>
+    </div>
+
+    <div class="auctions container mt-5 pt-3">
+      <div class="row pl-4 mb-3">
+        <h2>Trending Items</h2>
+      </div>
+      <div class="row justify-content-center">
+          <div class="col-md card border-primary mx-4 mx-md-1 mb-4 d-flex flex-column justify-content-between">
+              <img class="card-img-top pt-3 pt-lg-4" src="assets/paris.jpg" />
+              <div class="pb-4 px-3">
+                <h4 class="card-title mt-3 text-dark">Paris Heart</h4>
+                <div class="row no-gutters">
+                  <div class="col-sm-6">
+                      <p class="card-text text-danger">Ends in 4 days</p>
+                      <div class="row pl-3">
+                        <p class="card-text text-primary font-weight-bold">Last bid: 50€</p>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 text-right">
+                      <button
+                      type="button"
+                      class="btn btn-primary py-1 px-2"
+                    >
+                      Follow
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md card border-primary mx-4 mx-md-1 mb-4 d-flex flex-column justify-content-between">
+                <img class="card-img-top pt-3 pt-lg-4" src="assets/signed.jpg" />
+                <div class="pb-4 px-3">
+                  <h4 class="card-title mt-3 text-dark">Burt Lancaster</h4>
+                  <div class="row no-gutters">
+                    <div class="col-sm-6">
+                        <p class="card-text text-danger">Ends in 2 weeks</p>
+                        <div class="row pl-3">
+                          <p class="card-text text-primary font-weight-bold">Last bid: 250€</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 text-right">
+                        <button
+                        type="button"
+                        class="btn btn-primary py-1 px-2"
+                      >
+                        Follow
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md card border-primary mx-4 mx-md-1 mb-4 d-flex flex-column justify-content-between">
+                  <img class="card-img-top pt-3 pt-lg-4" src="assets/whitejar.jpg" />
+                  <div class="pb-4 px-3">
+                    <h4 class="card-title mt-3 text-dark">Chinese Porcelain Vase</h4>
+                    <div class="row no-gutters">
+                      <div class="col-sm-6">
+                          <p class="card-text text-danger">Ends in 3 days</p>
+                          <div class="row pl-3">
+                            <p class="card-text text-primary font-weight-bold">Last bid: 550€</p>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 text-right">
+                          <button
+                          type="button"
+                          class="btn btn-primary py-1 px-2"
+                        >
+                          Follow
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md card border-primary mx-4 mx-md-1 mb-4 d-flex flex-column justify-content-between">
+                    <img class="card-img-top pt-3 pt-lg-4" src="assets/bag.jpg" />
+                    <div class="pb-4 px-3">
+                      <h4 class="card-title mt-3 text-dark">Channel original bag</h4>
+                      <div class="row no-gutters">
+                        <div class="col-sm-6">
+                            <p class="card-text text-danger">Ends in 2 hours</p>
+                            <div class="row pl-3">
+                              <p class="card-text text-primary font-weight-bold">Last bid: 200€</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            <button
+                            type="button"
+                            class="btn btn-primary py-1 px-2"
+                          >
+                            Follow
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark p-2 mt-5">
+        <div class="container">
+            <div class="row flex-column-reverse flex-md-row">
+                <div class="col-md-6 d-flex align-items-center">
+                    <span class="d-none d-md-inline">Copyright AuctionLine© 2019 | All Rights Reserved</span>
+                    <div class="d-md-none text-center w-100">Copyright AuctionLine© 2019</div>
+                </div>
+                <div class="col-md-6 d-flex flex-row-reverse align-items-right">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item mr-0 mr-md-4">
+                          <a class="nav-link text-white" href="#">Rules</a>
+                        </li>
+                        <li class="nav-item mr-0 mr-md-4">
+                          <a class="nav-link text-white" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item mr-0 mr-md-4">
+                          <a class="nav-link text-white" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                        </li>
+                        <li class="nav-item mr-0 mr-md-4 mb-2 mb-md-0">
+                          <div class='footer-icon social fb'><i class='fab fa-facebook'></i></div>
+                          <div class='footer-icon social tw'><i class='fab fa-twitter'></i></div>
+                        </li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+      integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
